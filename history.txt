@@ -127,3 +127,61 @@
    45  git checkout -b feature-delete
    46  ./runtests.sh 
    47  history >> history.txt
+    1  git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && bash ./bin/setup.sh && history >> history.txt && exit
+    2  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    3  export GITHUB_ACCOUNT=maciel-j
+    4  which python
+    5  python --version
+    6  git cob dev-setup
+    7  git checkout -b dev-setup
+    8  cd devops-capstone-project/
+    9  git checkout -b dev-setup
+   10  chmod 700 runtests.sh 
+   11  ./runtests.sh 
+   12  history >> history.txt
+   13  git commit -am "added nose arguments"
+   14  git push --set-upstream origin dev-setup
+   15  git add .
+   16  git commit -m "added nose arguments 20241118"
+   17  git push origin dev-setup
+   18  git checkout main
+   19  git pull
+   20  git branch -d dev-setup
+   21  git checkout -b feature-read
+   22  nosetests -s
+   23  ./runtests.sh 
+   24  gir branch
+   25  git branch
+   26  git add .
+   27  git commit -m "add read feature"
+   28  git push --set-upstream origin feature-read
+   29  history >> history.txt
+   30  git add .
+   31  git commit -m "add read feature"
+   32  git push origin feature-read
+   33  git checkout main
+   34  git pull
+   35  git branch -d feature-read
+   36  git checkout -b feature-update
+   37  ./runtests.sh 
+   38  history >> history.txt
+   39  git add .
+   40  git commit -m "add update feature"
+   41  git push --set-upstream origin feature-update
+   42  git checkout main
+   43  git pull
+   44  git branch -d feature-update
+   45  git checkout -b feature-delete
+   46  ./runtests.sh 
+   47  history >> history.txt
+   48  git add .
+   49  git commit -m "add delete feature"
+   50  git push --set-upstream origin feature-delete
+   51  git checkout main
+   52  git pull
+   53  git branch -d feature-delete
+   54  git checkout -b feature-list
+   55  ./runtests.sh 
+   56  git checkout -b feature-list
+   57  ./runtests.sh 
+   58  history >> history.txt
