@@ -185,3 +185,4 @@
    56  git checkout -b feature-list
    57  ./runtests.sh 
    58  history >> history.txt
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
