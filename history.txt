@@ -1,0 +1,15 @@
+    ------------------------------------------ Lab: Develop a RESTful Service Using Test-Driven Development  ------------------------------------------
+    1  git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && bash ./bin/setup.sh && history >> history.txt && exit
+    2  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    1  git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && bash ./bin/setup.sh && history >> history.txt && exit
+    2  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    3  export GITHUB_ACCOUNT=maciel-j
+    4  which python
+    5  python --version
+    6  git cob dev-setup
+    7  git checkout -b dev-setup
+    8  cd devops-capstone-project/
+    9  git checkout -b dev-setup
+   10  chmod 700 runtests.sh 
+   11  ./runtests.sh 
+   12  history >> history.txt
