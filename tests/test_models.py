@@ -3,6 +3,7 @@ Test cases for Account Model
 
 """
 import logging
+from datetime import date
 import unittest
 import os
 from service import app
@@ -57,6 +58,7 @@ class TestAccount(unittest.TestCase):
             phone_number=fake_account.phone_number,
             date_joined=fake_account.date_joined,
         )
+        self.assertEqual(str(account), f"<Account {account.name} id=[None]>")
         self.assertIsNotNone(account)
         self.assertEqual(account.id, None)
         self.assertEqual(account.name, fake_account.name)
@@ -165,6 +167,20 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(new_account.address, account.address)
         self.assertEqual(new_account.phone_number, account.phone_number)
         self.assertEqual(new_account.date_joined, account.date_joined)
+
+    def test_deserialize_an_account_with_no_date(self):
+        """It should Deserialize an account with no date"""
+        account = AccountFactory()
+        account.create()
+        serial_account = account.serialize()
+        del serial_account["date_joined"]
+        new_account = Account()
+        new_account.deserialize(serial_account)
+        self.assertEqual(new_account.name, account.name)
+        self.assertEqual(new_account.email, account.email)
+        self.assertEqual(new_account.address, account.address)
+        self.assertEqual(new_account.phone_number, account.phone_number)
+        self.assertEqual(new_account.date_joined, date.today())
 
     def test_deserialize_with_key_error(self):
         """It should not Deserialize an account with a KeyError"""
