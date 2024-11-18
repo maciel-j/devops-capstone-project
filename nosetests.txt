@@ -1,3 +1,317 @@
+********************* [2024.11.18-10:43:13] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                253     11    96%
+----------------------------------------------------------------------
+Ran 25 tests in 0.870s
+
+OK
+
+********************* [2024.11.18-10:37:07] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;31m- It should Get a list of Accounts (ERROR)[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+ERROR: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 185, in test_get_account_list
+    response = self.client.get(BASE_URL)
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 1135, in get
+    return self.open(*args, **kw)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/testing.py", line 217, in open
+    return super().open(
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 1089, in open
+    response = self.run_wsgi_app(request.environ, buffered=buffered)
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 956, in run_wsgi_app
+    rv = run_wsgi_app(self.application, environ, buffered=buffered)
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 1237, in run_wsgi_app
+    app_rv = app(environ, start_response)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7ff93ff2e5e0> for seq=16
+flask.app: INFO: Creating Samantha Mullins
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7ff93ff2e5e0> for seq=17
+flask.app: INFO: Creating Carol Harris
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7ff93ff2e5e0> for seq=18
+flask.app: INFO: Creating Erin Garcia
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7ff93ff2e5e0> for seq=19
+flask.app: INFO: Creating Marissa Murray
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7ff93ff2e5e0> for seq=20
+flask.app: INFO: Creating Michael Dean
+flask.app: INFO: Processing all records
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                253     11    96%
+----------------------------------------------------------------------
+Ran 25 tests in 0.902s
+
+FAILED (errors=1)
+
+********************* [2024.11.18-10:29:46] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;31m- It should Get a list of Accounts (ERROR)[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+ERROR: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 185, in test_get_account_list
+    response = self.client.get(BASE_URL)
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 1135, in get
+    return self.open(*args, **kw)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/testing.py", line 217, in open
+    return super().open(
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 1089, in open
+    response = self.run_wsgi_app(request.environ, buffered=buffered)
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 956, in run_wsgi_app
+    rv = run_wsgi_app(self.application, environ, buffered=buffered)
+  File "/home/theia/venv/lib/python3.9/site-packages/werkzeug/test.py", line 1237, in run_wsgi_app
+    app_rv = app(environ, start_response)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "/home/theia/venv/lib/python3.9/site-packages/flask/app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f9414b2e5e0> for seq=16
+flask.app: INFO: Creating Meredith Gardner
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f9414b2e5e0> for seq=17
+flask.app: INFO: Creating Jordan Valdez
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f9414b2e5e0> for seq=18
+flask.app: INFO: Creating Mr. Michael Davis
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f9414b2e5e0> for seq=19
+flask.app: INFO: Creating Sonya Holloway
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f9414b2e5e0> for seq=20
+flask.app: INFO: Creating Matthew Carlson
+flask.app: INFO: Processing all records
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                253     11    96%
+----------------------------------------------------------------------
+Ran 25 tests in 0.967s
+
+FAILED (errors=1)
+
+********************* [2024.11.18-10:18:05] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;31m- It should Get a list of Accounts (FAILED)[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+FAIL: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 186, in test_get_account_list
+    self.assertEqual(response.status_code, status.HTTP_200_OK)
+AssertionError: 405 != 200
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f8e85c70430> for seq=16
+flask.app: INFO: Creating Gary Moore
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f8e85c70430> for seq=17
+flask.app: INFO: Creating Brandy Jones
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f8e85c70430> for seq=18
+flask.app: INFO: Creating Arthur Koch
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f8e85c70430> for seq=19
+flask.app: INFO: Creating Drew Hicks
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f8e85c70430> for seq=20
+flask.app: INFO: Creating Shawn Franklin
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      3    91%   76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     52      0   100%
+----------------------------------------------------------------
+TOTAL                                245      8    97%
+----------------------------------------------------------------------
+Ran 25 tests in 0.803s
+
+FAILED (failures=1)
+
 ********************* [2024.11.18-10:04:45] *********************
 
 
