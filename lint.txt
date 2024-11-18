@@ -1,3 +1,33 @@
+********************* [2024.11.18-10:59:41] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.18-10:58:54] *********************
+
+Running linting...
+0
+./tests/test_error_handlers.py:50:5: E303 too many blank lines (2)
+./tests/test_error_handlers.py:53:79: W292 no newline at end of file
+1     E303 too many blank lines (2)
+1     W292 no newline at end of file
+2
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.18-10:57:09] *********************
+
+Running linting...
+0
+./tests/test_error_handlers.py:8:1: F401 'tests.factories.AccountFactory' imported but unused
+./tests/test_error_handlers.py:51:5: E303 too many blank lines (2)
+./tests/test_error_handlers.py:54:79: W292 no newline at end of file
+1     E303 too many blank lines (2)
+1     F401 'tests.factories.AccountFactory' imported but unused
+1     W292 no newline at end of file
+3
+make: *** [Makefile:50: lint] Error 1
+
 ********************* [2024.11.18-10:43:13] *********************
 
 Running linting...
