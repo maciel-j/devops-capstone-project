@@ -1,3 +1,499 @@
+********************* [2024.11.18-08:40:26] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     11    95%
+----------------------------------------------------------------------
+Ran 21 tests in 0.733s
+
+OK
+
+********************* [2024.11.18-08:38:48] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return NOT FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     11    95%
+----------------------------------------------------------------------
+Ran 21 tests in 0.745s
+
+OK
+
+********************* [2024.11.18-08:29:11] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return NOT FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     11    95%
+----------------------------------------------------------------------
+Ran 21 tests in 0.783s
+
+OK
+
+********************* [2024.11.18-08:18:12] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     14    94%
+----------------------------------------------------------------------
+Ran 20 tests in 0.769s
+
+OK
+
+********************* [2024.11.18-08:06:35] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      2    97%   32, 127
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     15    93%
+----------------------------------------------------------------------
+Ran 19 tests in 0.813s
+
+OK
+
+********************* [2024.11.18-08:06:11] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;31m- It should Create an Account and assert that it exists (FAILED)[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+======================================================================
+FAIL: It should Create an Account and assert that it exists
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_models.py", line 60, in test_create_an_account
+    self.assertEqual(str(account), f"<Product {account.name} id=[None]>")
+AssertionError: '<Account Betty Baker id=[None]>' != '<Product Betty Baker id=[None]>'
+- <Account Betty Baker id=[None]>
+?  ^ ----
++ <Product Betty Baker id=[None]>
+?  ^^^^^
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f271b6f1040> for seq=1
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      2    97%   32, 127
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     15    93%
+----------------------------------------------------------------------
+Ran 19 tests in 0.800s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-08:04:48] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;31m- It should Create an Account and assert that it exists (FAILED)[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+======================================================================
+FAIL: It should Create an Account and assert that it exists
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_models.py", line 60, in test_create_an_account
+    self.assertEqual(str(Account), f"<Product {account.name} id=[None]>")
+AssertionError: "<class 'service.models.Account'>" != '<Product Linda Nelson id=[None]>'
+- <class 'service.models.Account'>
++ <Product Linda Nelson id=[None]>
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0b926b1040> for seq=1
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      3    96%   32, 98, 127
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     16    93%
+----------------------------------------------------------------------
+Ran 19 tests in 0.749s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-07:57:50] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      3    96%   32, 98, 127
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     16    93%
+----------------------------------------------------------------------
+Ran 19 tests in 0.766s
+
+OK
+
+********************* [2024.11.18-07:54:18] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      3    96%   32, 98, 127
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227     16    93%
+----------------------------------------------------------------------
+Ran 19 tests in 0.763s
+
+OK
+
+********************* [2024.11.18-07:50:45] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      9    72%   35-37, 46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      3    96%   32, 98, 127
+service/routes.py                     34      1    97%   82
+----------------------------------------------------------------
+TOTAL                                227     17    93%
+----------------------------------------------------------------------
+Ran 18 tests in 0.702s
+
+OK
+
 ********************* [2024.11.18-06:49:31] *********************
 
 
