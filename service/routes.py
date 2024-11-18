@@ -57,6 +57,7 @@ def create_accounts():
         jsonify(message), status.HTTP_201_CREATED, {"Location": location_url}
     )
 
+
 ######################################################################
 # LIST ALL ACCOUNTS
 ######################################################################
@@ -81,11 +82,26 @@ def get_accounts(account_id):
         return data, status.HTTP_200_OK
     return {"message": f"account {account_id} not found"}, status.HTTP_404_NOT_FOUND
 
+
 ######################################################################
 # UPDATE AN EXISTING ACCOUNT
 ######################################################################
+@app.route("/accounts/<account_id>", methods=["PUT"])
+def update_accounts(account_id):
+    """
+    Update an Account
+    """
+    app.logger.info("Request to Update a Account with id [%s]", account_id)
+    check_content_type("application/json")
 
-# ... place you code here to UPDATE an account ...
+    account = Account.find(int(account_id))
+    if not account:
+        abort(status.HTTP_404_NOT_FOUND, f"Account with id '{account_id}' was not found.")
+
+    account.deserialize(request.get_json())
+    account.id = account_id
+    account.update()
+    return account.serialize(), status.HTTP_200_OK
 
 
 ######################################################################

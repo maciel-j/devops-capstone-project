@@ -1,3 +1,81 @@
+********************* [2024.11.18-09:39:27] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.18-09:38:00] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.18-09:35:32] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.18-09:34:36] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.18-09:33:16] *********************
+
+Running linting...
+0
+./service/routes.py:88:1: E302 expected 2 blank lines, found 1
+./service/routes.py:104:1: W293 blank line contains whitespace
+1     E302 expected 2 blank lines, found 1
+1     W293 blank line contains whitespace
+2
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.18-09:32:56] *********************
+
+Running linting...
+0
+./service/routes.py:87:1: E302 expected 2 blank lines, found 1
+./service/routes.py:103:1: W293 blank line contains whitespace
+1     E302 expected 2 blank lines, found 1
+1     W293 blank line contains whitespace
+2
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.18-09:31:25] *********************
+
+Running linting...
+0
+./service/routes.py:87:1: E302 expected 2 blank lines, found 1
+./service/routes.py:102:1: W293 blank line contains whitespace
+1     E302 expected 2 blank lines, found 1
+1     W293 blank line contains whitespace
+2
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.18-09:30:22] *********************
+
+Running linting...
+0
+./service/routes.py:87:1: E302 expected 2 blank lines, found 1
+./service/routes.py:97:1: W293 blank line contains whitespace
+./service/routes.py:102:1: W293 blank line contains whitespace
+1     E302 expected 2 blank lines, found 1
+2     W293 blank line contains whitespace
+3
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.18-09:24:31] *********************
+
+Running linting...
+0
+./tests/test_routes.py:158:80: W292 no newline at end of file
+1     W292 no newline at end of file
+1
+make: *** [Makefile:50: lint] Error 1
+
 ********************* [2024.11.18-08:40:26] *********************
 
 Running linting...

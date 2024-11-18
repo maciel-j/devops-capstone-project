@@ -1,3 +1,548 @@
+********************* [2024.11.18-09:39:27] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     45      0   100%
+----------------------------------------------------------------
+TOTAL                                238     11    95%
+----------------------------------------------------------------------
+Ran 23 tests in 0.995s
+
+OK
+
+********************* [2024.11.18-09:38:00] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should Update an Account[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     45      0   100%
+----------------------------------------------------------------
+TOTAL                                238     11    95%
+----------------------------------------------------------------------
+Ran 23 tests in 0.838s
+
+OK
+
+********************* [2024.11.18-09:35:32] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     45      1    98%   99
+----------------------------------------------------------------
+TOTAL                                238     12    95%
+----------------------------------------------------------------------
+Ran 22 tests in 0.865s
+
+OK
+
+********************* [2024.11.18-09:34:36] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 158, in test_update_an_account
+    self.assertEqual(updated_account["name"], f"{new_account['name']} Doe")
+AssertionError: 'Jacob Peterson Doe' != 'Jacob Peterson Doe Doe'
+- Jacob Peterson Doe
++ Jacob Peterson Doe Doe
+?                ++++
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f3f000b3280> for seq=17
+flask.app: INFO: Creating Jacob Peterson
+flask.app: INFO: Processing lookup for id 262 ...
+flask.app: INFO: Updating Jacob Peterson Doe
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     45      1    98%   99
+----------------------------------------------------------------
+TOTAL                                238     12    95%
+----------------------------------------------------------------------
+Ran 22 tests in 0.825s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-09:33:16] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 158, in test_update_an_account
+    self.assertEqual(updated_account["name"], f"{new_account['name']} Doe")
+AssertionError: 'Karen Clark Doe' != 'Karen Clark Doe Doe'
+- Karen Clark Doe
++ Karen Clark Doe Doe
+?             ++++
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fcd215b3280> for seq=17
+flask.app: INFO: Creating Karen Clark
+flask.app: INFO: Processing lookup for id 247 ...
+flask.app: INFO: Updating Karen Clark Doe
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     45      1    98%   98
+----------------------------------------------------------------
+TOTAL                                238     12    95%
+----------------------------------------------------------------------
+Ran 22 tests in 0.742s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-09:32:56] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 158, in test_update_an_account
+    self.assertEqual(updated_account["name"], f"{new_account['name']} Doe")
+AssertionError: 'Sarah Garrett Doe' != 'Sarah Garrett Doe Doe'
+- Sarah Garrett Doe
++ Sarah Garrett Doe Doe
+?               ++++
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f7df8d73280> for seq=17
+flask.app: INFO: Creating Sarah Garrett
+flask.app: INFO: Processing lookup for id 232 ...
+flask.app: INFO: Updating Sarah Garrett Doe
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     45      1    98%   97
+----------------------------------------------------------------
+TOTAL                                238     12    95%
+----------------------------------------------------------------------
+Ran 22 tests in 0.935s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-09:31:25] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 158, in test_update_an_account
+    self.assertEqual(updated_account["name"], f"{new_account['name']} Doe")
+AssertionError: 'Christy Mcmillan Doe' != 'Christy Mcmillan Doe Doe'
+- Christy Mcmillan Doe
++ Christy Mcmillan Doe Doe
+?                  ++++
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f556c7b31f0> for seq=17
+flask.app: INFO: Creating Christy Mcmillan
+flask.app: INFO: Processing lookup for id 217 ...
+flask.app: INFO: Updating Christy Mcmillan Doe
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     44      1    98%   96
+----------------------------------------------------------------
+TOTAL                                237     12    95%
+----------------------------------------------------------------------
+Ran 22 tests in 0.775s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-09:30:22] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 158, in test_update_an_account
+    self.assertEqual(updated_account["name"], f"{new_account['name']} Doe")
+AssertionError: 'Mandy Anderson Doe' != 'Mandy Anderson Doe Doe'
+- Mandy Anderson Doe
++ Mandy Anderson Doe Doe
+?                ++++
+
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f9ebf7331f0> for seq=17
+flask.app: INFO: Creating Mandy Anderson
+flask.app: INFO: Processing lookup for id 202 ...
+flask.app: INFO: Updating Mandy Anderson Doe
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     44      1    98%   96
+----------------------------------------------------------------
+TOTAL                                237     12    95%
+----------------------------------------------------------------------
+Ran 22 tests in 0.767s
+
+FAILED (failures=1)
+
+********************* [2024.11.18-09:24:31] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 156, in test_update_an_account
+    self.assertEqual(response.status_code, status.HTTP_200_OK)
+AssertionError: 405 != 200
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7faff9cb1040> for seq=17
+flask.app: INFO: Creating Cassandra Weber
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   32-35
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      3    91%   76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     34      0   100%
+----------------------------------------------------------------
+TOTAL                                227      8    96%
+----------------------------------------------------------------------
+Ran 22 tests in 0.794s
+
+FAILED (failures=1)
+
 ********************* [2024.11.18-08:40:26] *********************
 
 
