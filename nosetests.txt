@@ -1,3 +1,1142 @@
+********************* [2024.11.19-08:34:36] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should return a CORS header[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should return security headers[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   22      3    86%   36-39
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                257     11    96%
+----------------------------------------------------------------------
+Ran 27 tests in 0.881s
+
+OK
+
+********************* [2024.11.19-08:32:22] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;31m- It should return a CORS header (FAILED)[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should return security headers[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+FAIL: It should return a CORS header
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 211, in test_cors_security
+    self.assertEqual(response.headers.get('Access-Control-Allow-Origin'), '*')
+AssertionError: None != '*'
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                255     11    96%
+----------------------------------------------------------------------
+Ran 27 tests in 0.907s
+
+FAILED (failures=1)
+
+********************* [2024.11.19-08:24:09] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should return security headers[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                255     11    96%
+----------------------------------------------------------------------
+Ran 26 tests in 0.843s
+
+OK
+
+********************* [2024.11.19-08:21:06] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;31m- It should not allow an illegal method call (FAILED)[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should return security headers[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+FAIL: It should not allow an illegal method call
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_error_handlers.py", line 53, in test_method_not_allowed
+    self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+AssertionError: 302 != 405
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                255     11    96%
+----------------------------------------------------------------------
+Ran 27 tests in 1.027s
+
+FAILED (failures=1)
+
+********************* [2024.11.19-08:18:12] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;31m- It should not allow an illegal method call (FAILED)[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;32m- It should return security headers[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+FAIL: It should not allow an illegal method call
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_error_handlers.py", line 52, in test_method_not_allowed
+    self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+AssertionError: 302 != 405
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      6    81%   46-48, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                255     11    96%
+----------------------------------------------------------------------
+Ran 27 tests in 0.869s
+
+FAILED (failures=1)
+
+********************* [2024.11.19-08:15:52] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;31m- It should not allow an illegal method call (FAILED)[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;31m- It should not Create an Account when sending the wrong data (FAILED)[1;0m
+[1;31m- It should Create a new Account (FAILED)[1;0m
+[1;31m- It should Delete a single Account (FAILED)[1;0m
+[1;31m- It should Get a list of Accounts (FAILED)[1;0m
+[1;31m- It should be healthy (FAILED)[1;0m
+[1;31m- It should get 200_OK from the Home Page (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when resource not exists (FAILED)[1;0m
+[1;31m- It should Read a single Account (FAILED)[1;0m
+[1;31m- It should return NOT found a single Account (FAILED)[1;0m
+[1;32m- It should return security headers[1;0m
+[1;31m- It should not Create an Account when sending the wrong media type (FAILED)[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when try update an inexisting account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should not allow an illegal method call
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_error_handlers.py", line 52, in test_method_not_allowed
+    self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+AssertionError: 302 != 405
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong data
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 115, in test_bad_request
+    self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+AssertionError: 302 != 400
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Create a new Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 98, in test_create_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=14
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Delete a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 176, in test_delete_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=15
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 185, in test_get_account_list
+    self._create_accounts(5)
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=16
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should be healthy
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 86, in test_health
+    self.assertEqual(resp.status_code, 200)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should get 200_OK from the Home Page
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 81, in test_index
+    self.assertEqual(response.status_code, status.HTTP_200_OK)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when resource not exists
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 120, in test_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should Read a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 136, in test_read_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=17
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return NOT found a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 145, in test_read_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong media type
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 130, in test_unsupported_media_type
+    self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+AssertionError: 302 != 415
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=18
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 151, in test_update_an_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=19
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when try update an inexisting account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 165, in test_update_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fc5b3f51940> for seq=20
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32     16    50%   16, 22-24, 35-37, 46-48, 61-63, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60     40    33%   19, 47-56, 67-74, 86-92, 103-113, 124-130, 140-144
+----------------------------------------------------------------
+TOTAL                                255     61    76%
+----------------------------------------------------------------------
+Ran 27 tests in 1.031s
+
+FAILED (failures=13)
+
+********************* [2024.11.19-08:15:31] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;31m- It should not allow an illegal method call (FAILED)[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;31m- It should not Create an Account when sending the wrong data (FAILED)[1;0m
+[1;31m- It should Create a new Account (FAILED)[1;0m
+[1;31m- It should Delete a single Account (FAILED)[1;0m
+[1;31m- It should Get a list of Accounts (FAILED)[1;0m
+[1;31m- It should be healthy (FAILED)[1;0m
+[1;31m- It should get 200_OK from the Home Page (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when resource not exists (FAILED)[1;0m
+[1;31m- It should Read a single Account (FAILED)[1;0m
+[1;31m- It should return NOT found a single Account (FAILED)[1;0m
+[1;32m- It should return security headers[1;0m
+[1;31m- It should not Create an Account when sending the wrong media type (FAILED)[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when try update an inexisting account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should not allow an illegal method call
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_error_handlers.py", line 52, in test_method_not_allowed
+    self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+AssertionError: 302 != 405
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong data
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 116, in test_bad_request
+    self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+AssertionError: 302 != 400
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Create a new Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 99, in test_create_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=14
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Delete a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 177, in test_delete_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=15
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 186, in test_get_account_list
+    self._create_accounts(5)
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=16
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should be healthy
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 87, in test_health
+    self.assertEqual(resp.status_code, 200)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should get 200_OK from the Home Page
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 82, in test_index
+    self.assertEqual(response.status_code, status.HTTP_200_OK)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when resource not exists
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 121, in test_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should Read a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 137, in test_read_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=17
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return NOT found a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 146, in test_read_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong media type
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 131, in test_unsupported_media_type
+    self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+AssertionError: 302 != 415
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=18
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 152, in test_update_an_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=19
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when try update an inexisting account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 166, in test_update_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f0272643940> for seq=20
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32     16    50%   16, 22-24, 35-37, 46-48, 61-63, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60     40    33%   19, 47-56, 67-74, 86-92, 103-113, 124-130, 140-144
+----------------------------------------------------------------
+TOTAL                                255     61    76%
+----------------------------------------------------------------------
+Ran 27 tests in 0.867s
+
+FAILED (failures=13)
+
+********************* [2024.11.19-08:14:56] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;31m- It should not allow an illegal method call (FAILED)[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;31m- It should not Create an Account when sending the wrong data (FAILED)[1;0m
+[1;31m- It should Create a new Account (FAILED)[1;0m
+[1;31m- It should Delete a single Account (FAILED)[1;0m
+[1;31m- It should Get a list of Accounts (FAILED)[1;0m
+[1;31m- It should be healthy (FAILED)[1;0m
+[1;31m- It should get 200_OK from the Home Page (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when resource not exists (FAILED)[1;0m
+[1;31m- It should Read a single Account (FAILED)[1;0m
+[1;31m- It should return NOT found a single Account (FAILED)[1;0m
+[1;32m- It should return security headers[1;0m
+[1;31m- It should not Create an Account when sending the wrong media type (FAILED)[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when try update an inexisting account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should not allow an illegal method call
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_error_handlers.py", line 52, in test_method_not_allowed
+    self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+AssertionError: 302 != 405
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong data
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 116, in test_bad_request
+    self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+AssertionError: 302 != 400
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Create a new Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 99, in test_create_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=14
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Delete a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 177, in test_delete_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=15
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 186, in test_get_account_list
+    self._create_accounts(5)
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=16
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should be healthy
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 87, in test_health
+    self.assertEqual(resp.status_code, 200)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should get 200_OK from the Home Page
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 82, in test_index
+    self.assertEqual(response.status_code, status.HTTP_200_OK)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when resource not exists
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 121, in test_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should Read a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 137, in test_read_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 64, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=17
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return NOT found a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 146, in test_read_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong media type
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 131, in test_unsupported_media_type
+    self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+AssertionError: 302 != 415
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=18
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 152, in test_update_an_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=19
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when try update an inexisting account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 166, in test_update_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7f91e0952940> for seq=20
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32     16    50%   16, 22-24, 35-37, 46-48, 61-63, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60     40    33%   19, 47-56, 67-74, 86-92, 103-113, 124-130, 140-144
+----------------------------------------------------------------
+TOTAL                                255     61    76%
+----------------------------------------------------------------------
+Ran 27 tests in 0.945s
+
+FAILED (failures=13)
+
+********************* [2024.11.19-08:14:14] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;31m- It should not allow an illegal method call (FAILED)[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;31m- It should not Create an Account when sending the wrong data (FAILED)[1;0m
+[1;31m- It should Create a new Account (FAILED)[1;0m
+[1;31m- It should Delete a single Account (FAILED)[1;0m
+[1;31m- It should Get a list of Accounts (FAILED)[1;0m
+[1;31m- It should be healthy (FAILED)[1;0m
+[1;31m- It should get 200_OK from the Home Page (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when resource not exists (FAILED)[1;0m
+[1;31m- It should Read a single Account (FAILED)[1;0m
+[1;31m- It should return NOT found a single Account (FAILED)[1;0m
+[1;32m- It should return security headers[1;0m
+[1;31m- It should not Create an Account when sending the wrong media type (FAILED)[1;0m
+[1;31m- It should Update an Account (FAILED)[1;0m
+[1;31m- It should return 404_NOT_FOUND when try update an inexisting account (FAILED)[1;0m
+
+======================================================================
+FAIL: It should not allow an illegal method call
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_error_handlers.py", line 52, in test_method_not_allowed
+    self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+AssertionError: 302 != 405
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong data
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 114, in test_bad_request
+    self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+AssertionError: 302 != 400
+-------------------- >> begin captured logging << --------------------
+flask.app: INFO: Initializing database
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Create a new Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 97, in test_create_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=14
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Delete a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 175, in test_delete_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 63, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=15
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Get a list of Accounts
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 184, in test_get_account_list
+    self._create_accounts(5)
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 63, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=16
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should be healthy
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 85, in test_health
+    self.assertEqual(resp.status_code, 200)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should get 200_OK from the Home Page
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 80, in test_index
+    self.assertEqual(response.status_code, status.HTTP_200_OK)
+AssertionError: 302 != 200
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when resource not exists
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 119, in test_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should Read a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 135, in test_read_an_account
+    test_account = self._create_accounts(1)[0]
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 63, in _create_accounts
+    self.assertEqual(
+AssertionError: 302 != 201 : Could not create test Account
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=17
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return NOT found a single Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 144, in test_read_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+AssertionError: 302 != 404
+
+======================================================================
+FAIL: It should not Create an Account when sending the wrong media type
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 129, in test_unsupported_media_type
+    self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+AssertionError: 302 != 415
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=18
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should Update an Account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 150, in test_update_an_account
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=19
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+FAIL: It should return 404_NOT_FOUND when try update an inexisting account
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 164, in test_update_an_account_not_found
+    self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+AssertionError: 302 != 201
+-------------------- >> begin captured logging << --------------------
+factory.generate: DEBUG: Sequence: Computing next value of <function AccountFactory.<lambda> at 0x7fa1ee7d2940> for seq=20
+--------------------- >> end captured logging << ---------------------
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   20      3    85%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32     16    50%   16, 22-24, 35-37, 46-48, 61-63, 76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60     40    33%   19, 47-56, 67-74, 86-92, 103-113, 124-130, 140-144
+----------------------------------------------------------------
+TOTAL                                255     61    76%
+----------------------------------------------------------------------
+Ran 27 tests in 1.105s
+
+FAILED (failures=13)
+
+********************* [2024.11.19-08:12:27] *********************
+
+
+Test Flask CLI Commands
+[1;32m- It should call the db-create command[1;0m
+
+Account Service Tests
+[1;32m- It should not allow an illegal method call[1;0m
+
+Test Cases for Account Model
+[1;32m- It should Create an account and add it to the database[1;0m
+[1;32m- It should Create an Account and assert that it exists[1;0m
+[1;32m- It should Delete an account from the database[1;0m
+[1;32m- It should Deserialize an account[1;0m
+[1;32m- It should Deserialize an account with no date[1;0m
+[1;32m- It should not Deserialize an account with a KeyError[1;0m
+[1;32m- It should not Deserialize an account with a TypeError[1;0m
+[1;32m- It should Find an Account by name[1;0m
+[1;32m- It should List all Accounts in the database[1;0m
+[1;32m- It should Read an account[1;0m
+[1;32m- It should Serialize an account[1;0m
+[1;32m- It should Update an account[1;0m
+
+Account Service Tests
+[1;32m- It should not Create an Account when sending the wrong data[1;0m
+[1;32m- It should Create a new Account[1;0m
+[1;32m- It should Delete a single Account[1;0m
+[1;32m- It should Get a list of Accounts[1;0m
+[1;32m- It should be healthy[1;0m
+[1;32m- It should get 200_OK from the Home Page[1;0m
+[1;32m- It should return 404_NOT_FOUND when resource not exists[1;0m
+[1;32m- It should Read a single Account[1;0m
+[1;32m- It should return NOT found a single Account[1;0m
+[1;31m- It should return security headers (FAILED)[1;0m
+[1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[1;32m- It should Update an Account[1;0m
+[1;32m- It should return 404_NOT_FOUND when try update an inexisting account[1;0m
+
+======================================================================
+FAIL: It should return security headers
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/project/devops-capstone-project/tests/test_routes.py", line 201, in test_security_headers
+    self.assertEqual(response.headers.get(key), value)
+AssertionError: None != 'SAMEORIGIN'
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+service/__init__.py                   18      3    83%   34-37
+service/common/__init__.py             0      0   100%
+service/common/cli_commands.py         7      0   100%
+service/common/error_handlers.py      32      3    91%   76-78
+service/common/log_handlers.py        10      1    90%   21
+service/common/status.py              46      0   100%
+service/config.py                     11      0   100%
+service/models.py                     69      1    99%   32
+service/routes.py                     60      0   100%
+----------------------------------------------------------------
+TOTAL                                253      8    97%
+----------------------------------------------------------------------
+Ran 27 tests in 0.871s
+
+FAILED (failures=1)
+
 ********************* [2024.11.18-10:59:41] *********************
 
 

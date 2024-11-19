@@ -186,3 +186,18 @@
    57  ./runtests.sh 
    58  history >> history.txt
     1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    2  which python
+    3  python --version
+    4  cd devops-capstone-project/
+    5  honcho start
+    6  git checkout -b feature-security
+    7  pip install -r requirements.txt
+    8  chmod 700 runtests.sh 
+    9  ./runtests.sh 
+   10  history >> history.txt
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    2  curl -I localhost:5000
+    3  cd devops-capstone-project/
+    4  history >> history.txt

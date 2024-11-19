@@ -1,3 +1,87 @@
+********************* [2024.11.19-08:34:36] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.19-08:32:22] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.19-08:24:09] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.19-08:21:06] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.19-08:18:12] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.19-08:15:52] *********************
+
+Running linting...
+0
+0
+
+********************* [2024.11.19-08:15:31] *********************
+
+Running linting...
+0
+./tests/test_routes.py:75:5: E303 too many blank lines (2)
+./tests/test_routes.py:79:5: E301 expected 1 blank line, found 0
+1     E301 expected 1 blank line, found 0
+1     E303 too many blank lines (2)
+2
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.19-08:14:56] *********************
+
+Running linting...
+0
+./tests/test_routes.py:26:1: E302 expected 2 blank lines, found 1
+./tests/test_routes.py:54:5: E303 too many blank lines (2)
+./tests/test_routes.py:58:5: E301 expected 1 blank line, found 0
+./tests/test_routes.py:75:5: E303 too many blank lines (2)
+./tests/test_routes.py:79:5: E301 expected 1 blank line, found 0
+2     E301 expected 1 blank line, found 0
+1     E302 expected 2 blank lines, found 1
+2     E303 too many blank lines (2)
+5
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.19-08:14:14] *********************
+
+Running linting...
+0
+./tests/test_routes.py:26:1: E302 expected 2 blank lines, found 1
+1     E302 expected 2 blank lines, found 1
+1
+make: *** [Makefile:50: lint] Error 1
+
+********************* [2024.11.19-08:12:27] *********************
+
+Running linting...
+0
+./service/__init__.py:9:1: E265 block comment should start with '# '
+./tests/test_routes.py:26:1: E302 expected 2 blank lines, found 1
+./tests/test_routes.py:201:63: W292 no newline at end of file
+1     E265 block comment should start with '# '
+1     E302 expected 2 blank lines, found 1
+1     W292 no newline at end of file
+3
+make: *** [Makefile:50: lint] Error 1
+
 ********************* [2024.11.18-10:59:41] *********************
 
 Running linting...
