@@ -201,3 +201,137 @@
     2  curl -I localhost:5000
     3  cd devops-capstone-project/
     4  history >> history.txt
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    2  which python
+    3  python --version
+    4  cd devops-capstone-project/
+    5  nosetests
+    6  oc create -f tekton/pvc.yaml
+    7  oc apply -f tekton/tasks.yaml
+    8  oc apply -f tekton/pipeline.yaml
+    9  tkn hub install task git-clone
+   10  export GITHUB_ACCOUNT=maciel-j
+   11  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   12  tkn pipelinerun ls
+   13  tkn hub install task flake8
+   14  oc apply -f tekton/pipeline.yaml
+   15  tkn pipeline start cd-pipeline        -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"        -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   16  tkn pipelinerun ls
+   17  tkn pipelinerun logs --last
+   18  git checkout -b cd-pipeline
+   19  history >> history.txt
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    2  which python
+    3  python --version
+    4  cd devops-capstone-project/
+    5  nosetests
+    6  oc create -f tekton/pvc.yaml
+    7  oc apply -f tekton/tasks.yaml
+    8  oc apply -f tekton/pipeline.yaml
+    9  tkn hub install task git-clone
+   10  export GITHUB_ACCOUNT=maciel-j
+   11  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   12  tkn pipelinerun ls
+   13  tkn hub install task flake8
+   14  oc apply -f tekton/pipeline.yaml
+   15  tkn pipeline start cd-pipeline        -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"        -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   16  tkn pipelinerun ls
+   17  tkn pipelinerun logs --last
+   18  git checkout -b cd-pipeline
+   19  history >> history.txt
+   20  git add .
+   21  git commit -am 'added link task'
+   22  git push --set-upstream origin cd-pipeline
+   23  oc apply -f tekton/tasks.yaml
+   24  git add .
+   25  git commit -m 'added nose task'
+   26  git push
+   27  git add .
+   28  git commit -m 'added test pipeline task'
+   29  git push
+   30  oc get svc postgresql
+   31  oc new-app postgresql-ephemeral
+   32  oc get pods
+   33  oc apply -f tekton/pipeline.yaml
+   34  tkn pipeline start cd-pipeline        -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"        -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   35  nosetests
+   36  tkn clustertask ls
+   37  oc apply -f tekton/pipeline.yaml
+   38  git add .
+   39  git commit -am 'added build task'
+   40  git push
+   41  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch=main     -p build-image=image-registry.openshift-image-registry.svc:5000/$SN_ICR_NAMESPACE/accounts:1     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   42  kubectl apply -f tekton/pipeline.yaml
+   43  history >> history.txt
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    2  which python
+    3  python --version
+    4  cd devops-capstone-project/
+    5  nosetests
+    6  oc create -f tekton/pvc.yaml
+    7  oc apply -f tekton/tasks.yaml
+    8  oc apply -f tekton/pipeline.yaml
+    9  tkn hub install task git-clone
+   10  export GITHUB_ACCOUNT=maciel-j
+   11  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   12  tkn pipelinerun ls
+   13  tkn hub install task flake8
+   14  oc apply -f tekton/pipeline.yaml
+   15  tkn pipeline start cd-pipeline        -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"        -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   16  tkn pipelinerun ls
+   17  tkn pipelinerun logs --last
+   18  git checkout -b cd-pipeline
+   19  history >> history.txt
+   20  git add .
+   21  git commit -am 'added link task'
+   22  git push --set-upstream origin cd-pipeline
+   23  oc apply -f tekton/tasks.yaml
+   24  git add .
+   25  git commit -m 'added nose task'
+   26  git push
+   27  git add .
+   28  git commit -m 'added test pipeline task'
+   29  git push
+   30  oc get svc postgresql
+   31  oc new-app postgresql-ephemeral
+   32  oc get pods
+   33  oc apply -f tekton/pipeline.yaml
+   34  tkn pipeline start cd-pipeline        -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"        -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   35  nosetests
+   36  tkn clustertask ls
+   37  oc apply -f tekton/pipeline.yaml
+   38  git add .
+   39  git commit -am 'added build task'
+   40  git push
+   41  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch=main     -p build-image=image-registry.openshift-image-registry.svc:5000/$SN_ICR_NAMESPACE/accounts:1     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   42  kubectl apply -f tekton/pipeline.yaml
+   43  history >> history.txt
+   44  git add .
+   45  git commit -m 'added deploy task'
+   46  git push
+   47  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch=cd-pipeline     -p build-image=image-registry.openshift-image-registry.svc:5000/$SN_ICR_NAMESPACE/accounts:1     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   48  nosetests
+   49  python
+   50  nosetests
+   51  echo $DATABASE_URI
+   52  nosetests
+   53  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch=cd-pipeline     -p build-image=image-registry.openshift-image-registry.svc:5000/$SN_ICR_NAMESPACE/accounts:1     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   54  git add .
+   55  git commit -m "add config test"
+   56  git push
+   57  honcho start
+   58  nosetests
+   59  python
+   60  nosetests
+   61  git add .
+   62  nosetests
+   63  git add .
+   64  git commit -m "add config test"
+   65  git push
+   66  git add .
+   67  git commit -m "rm config test"
+   68  git push
+   69  oc get all -l app=accounts
+   70  tkn pipelinerun logs -L > pipelinerun.txt
+   71  git add .
+   72  history >> history.txt
