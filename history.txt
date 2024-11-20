@@ -201,3 +201,22 @@
     2  curl -I localhost:5000
     3  cd devops-capstone-project/
     4  history >> history.txt
+    1  git clone https://github.com/maciel-j/devops-capstone-project.git && cd devops-capstone-project && git config user.email "jose.s.maciel@outlook.com" && git config user.name "maciel-j" && git config --list && bash ./bin/setup.sh && history >> history.txt && exit
+    2  which python
+    3  python --version
+    4  cd devops-capstone-project/
+    5  nosetests
+    6  oc create -f tekton/pvc.yaml
+    7  oc apply -f tekton/tasks.yaml
+    8  oc apply -f tekton/pipeline.yaml
+    9  tkn hub install task git-clone
+   10  export GITHUB_ACCOUNT=maciel-j
+   11  tkn pipeline start cd-pipeline     -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"     -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   12  tkn pipelinerun ls
+   13  tkn hub install task flake8
+   14  oc apply -f tekton/pipeline.yaml
+   15  tkn pipeline start cd-pipeline        -p repo-url="https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git"     -p branch="main"        -w name=pipeline-workspace,claimName=pipelinerun-pvc     -s pipeline     --showlog
+   16  tkn pipelinerun ls
+   17  tkn pipelinerun logs --last
+   18  git checkout -b cd-pipeline
+   19  history >> history.txt
