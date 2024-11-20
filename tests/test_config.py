@@ -13,9 +13,9 @@ from service import talisman
 from service import config
 from service.routes import app
 
-DATABASE_URI = os.getenv(
-    "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
-)
+# DATABASE_URI = os.getenv(
+#    "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
+#)
 
 ######################################################################
 #  T E S T   C A S E S
@@ -47,4 +47,8 @@ class TestConfig(TestCase):
 
     def test_env_variables(self):
         """It should all evironment variable to be set"""
-        self.assertIsNotNone(DATABASE_URI, "Test DATABASE_URI is none.")
+        self.assertTrue(config.DATABASE_USER)
+        self.assertTrue(config.DATABASE_PASSWORD)
+        self.assertTrue(config.DATABASE_NAME) 
+        self.assertTrue(config.DATABASE_HOST)
+        self.assertTrue(config.DATABASE_URI)
